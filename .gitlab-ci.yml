@@ -19,8 +19,8 @@ build:
     paths:
       - out/
     expire_in: 1 hour
-  only:
-    - main
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
 
 pages:
   stage: deploy
@@ -33,5 +33,5 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - main
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
