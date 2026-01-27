@@ -1,0 +1,37 @@
+# GitLab CI/CD Pipeline for Next.js Static Export
+image: node:18
+
+cache:
+  paths:
+    - node_modules/
+    - .next/cache/
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - out/
+    expire_in: 1 hour
+  only:
+    - main
+
+pages:
+  stage: deploy
+  dependencies:
+    - build
+  script:
+    - mkdir .public
+    - cp -r out/* .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
