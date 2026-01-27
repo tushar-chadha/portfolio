@@ -287,7 +287,7 @@ export default function Portfolio() {
               Live on App Store & Play Store
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Apps I've <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Built</span>
+              Apps I&apos;ve <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Built</span>
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto">Production apps with real users, real downloads, and real impact</p>
           </motion.div>
@@ -307,6 +307,7 @@ export default function Portfolio() {
                     <div className="flex items-start justify-between mb-6">
                       <div>
                         <div className="flex items-center gap-3 mb-4">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={app.logo} alt={`${app.name} logo`} className="w-16 h-16 rounded-2xl shadow-lg" />
                           {app.badge && (
                             <span className="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-white text-xs font-medium">
@@ -529,9 +530,9 @@ export default function Portfolio() {
               Open to opportunities
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Let's Build <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Together</span>
+              Let&apos;s Build <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Together</span>
             </h2>
-            <p className="text-white/60 mb-12 max-w-xl mx-auto">Have an app idea? Need a mobile developer? Let's chat and turn your vision into reality.</p>
+            <p className="text-white/60 mb-12 max-w-xl mx-auto">Have an app idea? Need a mobile developer? Let&apos;s chat and turn your vision into reality.</p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <a href="mailto:Tushar_chadha@hotmail.com" className="bg-slate-900/50 backdrop-blur border border-white/10 rounded-2xl p-6 hover:border-blue-500/50 hover:bg-slate-900/80 transition-all group">
