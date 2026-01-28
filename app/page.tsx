@@ -56,7 +56,7 @@ export default function Portfolio() {
       name: "Maishaa",
       subtitle: "Internal Business Management Platform",
       description: "Complete internal tools ecosystem for business operations. Led frontend development team building admin panels, dashboards, and management systems using Flutter Web + Mobile. Guided backend team in GoLang microservices architecture. Migrated legacy PHP system to modern tech stack.",
-      logo: "/misfits-logo.png",
+      logo: "/maishaa-logo.png",
       gradient: "from-emerald-600 via-teal-500 to-cyan-500",
       appStoreLink: "#",
       playStoreLink: "#",
