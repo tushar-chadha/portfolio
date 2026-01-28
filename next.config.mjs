@@ -4,9 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // For GitLab Pages deployment
-  basePath: '/tushar-chadha-portfolio',
-  assetPrefix: '/tushar-chadha-portfolio',
+  // For GitLab Pages deployment (disabled for Vercel)
+  // basePath: '/tushar-chadha-portfolio',
+  // assetPrefix: '/tushar-chadha-portfolio',
 };
 
 export default nextConfig;

@@ -46,7 +46,7 @@ export default function Portfolio() {
       gradient: "from-purple-600 via-pink-500 to-rose-500",
       appStoreLink: "https://apps.apple.com/in/app/peace-app-therapy-and-more/id6745767430",
       playStoreLink: "https://play.google.com/store/apps/details?id=com.peace.app",
-      stats: { rating: "4.9" },
+      stats: {},
       tech: ["Flutter", "BLoC", "MVVM", "Firebase"],
       features: ["Therapy Sessions", "Mood Tracking", "Meditation", "Progress Analytics"],
       badge: "Solo Project",
@@ -351,20 +351,24 @@ export default function Portfolio() {
                     <p className="text-white/60 mb-6">{app.description}</p>
 
                     {/* Stats */}
-                    <div className="flex gap-6 mb-6">
-                      {app.stats.downloads && (
-                        <div className="flex items-center gap-2">
-                          <Download className="w-4 h-4 text-blue-400" />
-                          <span className="text-white font-semibold">{app.stats.downloads}</span>
-                          <span className="text-white/40 text-sm">downloads</span>
-                        </div>
-                      )}
-                      <div className="flex items-center gap-2">
-                        <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                        <span className="text-white font-semibold">{app.stats.rating}</span>
-                        <span className="text-white/40 text-sm">rating</span>
+                    {(app.stats.downloads || app.stats.rating) && (
+                      <div className="flex gap-6 mb-6">
+                        {app.stats.downloads && (
+                          <div className="flex items-center gap-2">
+                            <Download className="w-4 h-4 text-blue-400" />
+                            <span className="text-white font-semibold">{app.stats.downloads}</span>
+                            <span className="text-white/40 text-sm">downloads</span>
+                          </div>
+                        )}
+                        {app.stats.rating && (
+                          <div className="flex items-center gap-2">
+                            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                            <span className="text-white font-semibold">{app.stats.rating}</span>
+                            <span className="text-white/40 text-sm">rating</span>
+                          </div>
+                        )}
                       </div>
-                    </div>
+                    )}
 
                     {/* Tech Stack */}
                     <div className="flex flex-wrap gap-2 mb-6">
