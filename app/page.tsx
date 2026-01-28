@@ -131,8 +131,8 @@ export default function Portfolio() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="/Tushar_Chadha_Resume.docx"
-              download="Tushar_Chadha_Resume.docx"
+              href="/Tushar_Chadha_Resume.pdf"
+              download="Tushar_Chadha_Resume.pdf"
               className="hidden sm:flex items-center gap-2 border border-white/20 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
             >
               <FileDown className="w-4 h-4" />
@@ -190,8 +190,8 @@ export default function Portfolio() {
                   <ArrowUpRight className="w-4 h-4" />
                 </a>
                 <a
-                  href="/Tushar_Chadha_Resume.docx"
-                  download="Tushar_Chadha_Resume.docx"
+                  href="/Tushar_Chadha_Resume.pdf"
+                  download="Tushar_Chadha_Resume.pdf"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity inline-flex items-center gap-2"
                 >
                   <FileDown className="w-4 h-4" />
