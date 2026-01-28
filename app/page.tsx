@@ -68,16 +68,16 @@ export default function Portfolio() {
       role: "Cross-Platform Mobile Engineer",
       period: "Dec 2022 - Mar 2024",
       location: "Remote",
-      description: "Delivered multiple product-grade mobile solutions across ed-tech, wellness, and SaaS domains. Projects include Peace App (mental wellness platform as sole engineer), Maishaa (admin dashboards with Go backend), and HiCollege (EdTech platform with native iOS features).",
-      tags: ["Flutter", "Swift", "GoLang", "gRPC", "BLoC", "MVVM"],
+      description: "Delivered multiple product-grade mobile solutions across ed-tech, wellness, and SaaS domains. Led complete tech stack migration for Maishaa (PHP to Flutter Web/Mobile + GoLang backend), built Peace App as sole engineer, and developed HiCollege EdTech platform with native iOS features.",
+      tags: ["Flutter", "Flutter Web", "Swift", "GoLang", "gRPC", "AWS", "System Migration"],
       subProjects: [
         {
           name: "Peace App",
           description: "Independently architected and launched full-scale mental wellness app. Designed scalable architecture using BLoC + MVVM. Managed full product lifecycle from requirements to App Store deployment.",
         },
         {
-          name: "Maishaa",
-          description: "Led mobile dashboards development. Guided backend API architecture using Go and gRPC. Migrated infrastructure from cPanel to AWS.",
+          name: "Maishaa - Business Management Platform",
+          description: "Led complete platform modernization - migrated legacy PHP system to Flutter (web + mobile) for internal business tools. Architected and built GoLang backend with gRPC APIs. Managed AWS infrastructure migration from cPanel, implementing scalable cloud architecture for admin panels, dashboards, and operational management systems.",
         },
         {
           name: "HiCollege",
