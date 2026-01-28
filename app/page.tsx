@@ -322,7 +322,7 @@ export default function Portfolio() {
                       <div>
                         <div className="flex items-center gap-3 mb-4">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={app.logo} alt={`${app.name} logo`} className="w-16 h-16 rounded-2xl shadow-lg" />
+                          <img src={app.logo} alt={`${app.name} logo`} className={`${app.name === 'Maishaa' ? 'h-16 w-auto' : 'w-16 h-16'} rounded-2xl shadow-lg object-contain`} />
                           {app.badge && (
                             <span className="bg-white/20 backdrop-blur px-3 py-1 rounded-full text-white text-xs font-medium">
                               {app.badge}
