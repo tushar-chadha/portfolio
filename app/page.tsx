@@ -21,9 +21,8 @@ export default function Portfolio() {
 
   // Calculate total app downloads from published apps
   // Misfits Communities: 50K+ downloads (from App Store stats)
-  // Peace App: 10K+ downloads (from App Store stats)
-  // Total: 60K+ downloads
-  const totalDownloads = "60K+";
+  // Total: 50K+ downloads
+  const totalDownloads = "50K+";
 
   const apps = [
     {
@@ -47,7 +46,7 @@ export default function Portfolio() {
       gradient: "from-purple-600 via-pink-500 to-rose-500",
       appStoreLink: "https://apps.apple.com/in/app/peace-app-therapy-and-more/id6745767430",
       playStoreLink: "https://play.google.com/store/apps/details?id=com.peace.app",
-      stats: { downloads: "10K+", rating: "4.9" },
+      stats: { rating: "4.9" },
       tech: ["Flutter", "BLoC", "MVVM", "Firebase"],
       features: ["Therapy Sessions", "Mood Tracking", "Meditation", "Progress Analytics"],
       badge: "Solo Project",
@@ -353,11 +352,13 @@ export default function Portfolio() {
 
                     {/* Stats */}
                     <div className="flex gap-6 mb-6">
-                      <div className="flex items-center gap-2">
-                        <Download className="w-4 h-4 text-blue-400" />
-                        <span className="text-white font-semibold">{app.stats.downloads}</span>
-                        <span className="text-white/40 text-sm">downloads</span>
-                      </div>
+                      {app.stats.downloads && (
+                        <div className="flex items-center gap-2">
+                          <Download className="w-4 h-4 text-blue-400" />
+                          <span className="text-white font-semibold">{app.stats.downloads}</span>
+                          <span className="text-white/40 text-sm">downloads</span>
+                        </div>
+                      )}
                       <div className="flex items-center gap-2">
                         <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                         <span className="text-white font-semibold">{app.stats.rating}</span>
